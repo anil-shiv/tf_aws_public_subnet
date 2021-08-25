@@ -4,14 +4,14 @@ variable "name" {
 
 variable "cidrs" {
   description = "List of VPC CIDR blocks"
-  type = list(string)
-  default = []
+  type        = list(string)
+  default     = []
 }
 
 variable "azs" {
   description = "A list of avalability zones"
-  type = list(string)
-  default = [  ]
+  type        = list(string)
+  default     = []
 }
 
 variable "vpc_id" {
@@ -24,7 +24,7 @@ variable "igw_id" {
 
 variable "map_public_ip_on_launch" {
   description = "Specify true to indicate that instances launched into the subnet should be assigned a public IP address."
-  default = true
+  default     = true
 }
 
 variable "env" {
@@ -32,20 +32,20 @@ variable "env" {
 }
 
 variable "business_unit" {
-    description = "Business unit within organization (e.g. Consumer)"
+  description = "Business unit within organization (e.g. Consumer)"
 }
 
 variable "app_tag" {
-    description = "APP tag eg. Plateform, DevOps"
+  description = "APP tag eg. Plateform, DevOps"
 }
 
 variable "managed_by" {
-    description = "Managed by eg. Plateform, DevOps"
+  description = "Managed by eg. Plateform, DevOps"
 }
 
 variable "tier" {
   description = "Tier as it relates to vpc it belongs to (eg. dmz, app, db)"
-  type = string
+  type        = string
 }
 
 variable "data_classification" {
